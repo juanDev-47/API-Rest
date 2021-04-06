@@ -1,0 +1,23 @@
+[
+     {
+          "id": 1,
+          "title": "Aliens",
+          "director": "James Cameron",
+          "year": "1988",
+          "rating": "8.4"
+     },
+     {
+          "id": 2,
+          "title": "Hitman",
+          "director": "Xavier Gens",
+          "year": "2007",
+          "rating": "9.9"
+     },
+     {
+          "id": 3,
+          "title": "Hitman 2",
+          "director": "Xavier Gens",
+          "year": "2015",
+          "rating": "9.9"
+     }
+]
