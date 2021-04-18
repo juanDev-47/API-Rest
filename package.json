@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon functions/index.js",
     "start": "./node_modules/.bin/netlify-lambda serve functions",
-    "build": "./node_modules/.bin/netlify-lambda build functions"
+    "build": "npm run build functions"
   },
   "keywords": [],
   "author": "",
