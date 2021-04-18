@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
+const serverless = require('serverless-http');
 
 
 // configuraciones
@@ -25,3 +26,4 @@ app.listen(app.get('port'), () =>{
 });
 
 
+module.exports.handler = serverless(app);

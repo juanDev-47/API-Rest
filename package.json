@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon functions/index.js",
     "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda functions src"
+    "build": "./node_modules/.bin/netlify-lambda build src"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "netlify-cli": "^3.18.3",
     "netlify-lambda": "^2.0.3",
     "node-fetch": "^2.6.1",
+    "serverless-http": "^2.7.0",
     "underscore": "^1.12.1"
   },
   "devDependencies": {
