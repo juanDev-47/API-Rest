@@ -14,12 +14,14 @@ app.use(express.urlencoded({extended: false}));   // soportar archivos tipo html
 app.use(express.json()); // con este metodo logramos que express reciba los formatos json y los procese 
 
 // routes
-app.use(require('./routes/index'));
-app.use('/api/movies',require('./routes/movies'));  // con esto ejecutamos la ruta de movies.js 
-app.use('/api/users', require('./routes/users'))
+app.use(require('../src/routes/index'));
+app.use('/.netlify/functions/api/movies',require('../src/routes/movies'));  // con esto ejecutamos la ruta de movies.js 
+app.use('/.netlify/functions/api/users', require('../src/routes/users'))
 
 
 // starting the server 
 app.listen(app.get('port'), () =>{
      console.log(`Server on port ${app.get('port')}`);
 });
+
+
